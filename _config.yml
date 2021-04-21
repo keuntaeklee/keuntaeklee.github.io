@@ -11,8 +11,6 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 icon: 🔥 # the emoji used as the favicon
 url:  # the base hostname & protocol for your site
@@ -46,7 +44,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
-linkedin_username: keuntaek-lee-7802ba100/?locale=en_US # your LinkedIn user name
+linkedin_username: keuntaeklee/?locale=en_US # your LinkedIn user name
 scholar_userid: -0ASVXUAAAAJ&hl=en # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -59,7 +57,7 @@ keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Please Contact via email or LinkedIn.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
