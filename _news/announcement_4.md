@@ -4,4 +4,4 @@ date: 2021-05-10 15:59:00-0400
 inline: true
 ---
 
-I will be working as a ML/AI research intern at Honda Research Institute (HRI)-US.
+I will be working as an ML/AI research intern at Honda Research Institute (HRI)-US.
