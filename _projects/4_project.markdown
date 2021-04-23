@@ -1,78 +1,53 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Objective Learning
+description: Learning an implicit objective function with Deep Neural Networks to generalize to new environments
+img: /assets/img/shadow.jpg
+importance: 4
+category: ML + Autonomous Driving
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/shadow.jpg' | relative_url }}" alt="" title="Shadow"/>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/dayandnight.jpg' | relative_url }}" alt="" title="Day and Night"/>
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Various lighting conditions autonomous cars see in the real world.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+Data-driven approaches in safety-critical systems are easy to fail.
 
+Now only due to the change of lighting conditions shown above, there are numerous cases that could fail the deep learned moels.
+
+One big challenge of deel models are the generalizability to new environments. Imagine a deep learning model of your self-driving car was trained in U.S., and you're testing them in Korea.
+
+Especially, when the learned mapping via ML/DL is to the final decision (control action), the DL model tends to fail more.
+
+To solve this issue, instead of learning the control policy of the expert from data, we propose to learn, from the same data, an objective function of an expert when the data was collected. In this way, the predicted objective function will be less vulnerable to new inputs (environments).
+
+Some examples of Objective Learning includes Inverse Reinforcement Learning and Inverse Optimal Control. Both learns the implicit reward/cost function from the observed data (expert's demonstration).
+
+In this project, we learned the implicit cost function (costmap) from data and showed a better generalizability compared to the other end-to-end learning approach and the supervised costmap learning approach.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Marietta_input_img_000348.png' | relative_url }}" alt="" title="new input"/>
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Marietta_output_img_000348.png' | relative_url }}" alt="" title="airl"/>
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Marietta_paul_output000348.png' | relative_url }}" alt="" title="supervised"/>
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+*Left*: A new input image to the trained model. *Middle*: Our approach of predicting a costmap. *Right*: The state-of-the-art supervised learning approach.
 </div>
 
+## Publications:
+1. **K. Lee**, B. Vlahov, J. Gibson, J. M. Rehg, and E. A. Theodorou. "Approximate Inverse Reinforcement Learning from Vision-based Imitation Learning." 2021 IEEE International Conference on Robotics and Automation (ICRA). <a href="https://arxiv.org/abs/2004.08051">[PDF]</a> <a href="https://drive.google.com/file/d/14XbceV8czvdwh0T-K9U8sHTaBxtjYOh1/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=WyJfT5lc0aQ"> [Video]</a>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```

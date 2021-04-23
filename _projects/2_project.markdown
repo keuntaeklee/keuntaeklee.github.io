@@ -1,78 +1,31 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: /assets/img/3.jpg
+title: End-to-End Imitation Learning
+description: Deep Learning of Autonomous Driving
+img: /assets/img/pan2018rssfig3.png
 importance: 2
-category: work
+category: ML + Autonomous Driving
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+We present an end-to-end imitation learning system for agile, off-road autonomous driving using only low-cost onboard sensors.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pan2018rssfig3.png' | relative_url }}" alt="" title="pan2018rssfig3"/>
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    The proposed end-to-end deep neural network structure for learning autonomous driving from sensors.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+## Publications:
 
+1. Y. Pan, C. Cheng, K. Saigol, **K. Lee**, X. Yan, E. A. Theodorou, and B. Boots. "Imitation Learning for Agile Autonomous Driving". International Journal of Robotics Research (IJRR), 2019. (Impact Factor: 4.04) <a href="https://journals.sagepub.com/eprint/Z5NEVTV87KUHVHRDTSKC/full#articleCitationDownloadContainer">[PDF]</a> <a href="https://drive.google.com/file/d/190Dn2hP5bRiFaGTuOqbp-lnVvV8RAd9q/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=hUoDNeZS4so">[Video]</a>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+2. Y. Pan, C. Cheng, K. Saigol, **K. Lee**, X. Yan, E. A. Theodorou, and B. Boots. "Agile Off-Road Autonomous Driving Using End-to-End Deep Imitation Learning."  Robotics: Science and Systems (RSS), 2018. (*Best Systems Paper Award Finalist*) <a href="http://www.roboticsproceedings.org/rss14/p56.pdf">[PDF]</a> <a href="https://drive.google.com/file/d/1AiE3LM7eFDfCWwSVLjRioOvsch-VAxff/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=hUoDNeZS4so">[Video]</a>
 
+3. Y. Pan, C. Cheng, K. Saigol, **K. Lee**, X. Yan, E. A. Theodorou, and B. Boots. "Learning Deep Neural Network Control Policies for Agile Off-Road Autonomous Driving." 2017 Conference on Neural Information Processing Systems (NeurIPS) Deep Reinforcement Learning Symposium. <a href="https://www.semanticscholar.org/paper/Learning-Deep-Neural-Network-Control-Policies-for-Pan-Cheng/63ea737194fc5954b1cd9f53d2c3d02fc74477e7?p2df">[PDF]</a> <a href="https://drive.google.com/file/d/1ixIGW1UCE0dKJVeXKJtyOjIsa9bMxzn-/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=FsRP4rEYiLI">[Video]</a>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+4. Y. Pan, C. Cheng, K. Saigol, **K. Lee**, X. Yan, E. A. Theodorou, and B. Boots. "Deep AutoRally: Agile Autonomous Driving via End-to-End Imitation Learning."  Robotics: Science and Systems(RSS) Workshop on Learning from Demonstrations in High-Dimensional Feature Spaces, 2017. <a href="https://par.nsf.gov/servlets/purl/10090226">[PDF]</a> <a href="https://drive.google.com/file/d/19l7B95q6X4ILDrhthvruJ9EFYLPjZaaQ/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=FsRP4rEYiLI">[Video]</a>
 
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```

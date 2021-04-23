@@ -1,78 +1,45 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: Controlling the Vision
+description: PixelMPC with a Learned Optical Flow Dynamics
+img: /assets/img/pixeltraj_plot.png
+importance: 6
+category: ML + Autonomous Drone
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Problem of the high-speed racing
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+In drone racing with a drone equipped with a camera, it is important to control the drone to see and collect more useful information, for example, by pitching up or rolling/yawing. 
+However, this conflicts with the high-speed flying task for a drone because a quadrotor needs to pitch down to fly at a high speed and this results in losing more visual information.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+
+
+## Controlling the Vision
+
+We introduce deep optical flow (DOF) dynamics, which is a combination of optical flow and robot dynamics. With the DOF dynamics, we can predict the optical flow of the next image captured by the camera mounted on the drone. This prediction is coming from the control action the drone takes.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/dof.png' | relative_url }}" alt="" title="Pixel Trajectory"/>
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    *Left*: Legend of optical flow. *Middle*: The ground truth of optical flow, calculated from collected data. *Right*: The predicted optical flow from the learned model.
 </div>
+
+Using the DOF dynamics, PixelMPC explicitly incorporates the predicted movement of relevant pixels into the planned trajectory of a robot.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pixeltraj.png' | relative_url }}" alt="" title="Pixel Trajectory"/>
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    The future movement of the target pixel (the center of a racing gate) predicted by propagating the learned pixel dynamics with MPC.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+With the proposed MPC approach, the drone can achieve both a visual tracking task and the high speed racing task together.
 
+## Publications:
+1. **K. Lee**, J. Gibson, and E. A. Theodorou. "Aggressive Perception-Aware Navigation using Deep Optical Flow Dynamics and PixelMPC". IEEE Robotics and Automation Letters (RA-L), 2020. <a href="https://ieeexplore.ieee.org/document/8957291">[PDF]</a> <a href="https://drive.google.com/file/d/16E0-Ys0HDa6L_-fxsym4X6GkI89Fh6fM/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=NzL2YRcOh_I"> [Video]</a>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
