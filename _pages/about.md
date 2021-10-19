@@ -20,4 +20,4 @@ Hi, my name is Keuntaek Lee and I am a Ph.D. student advised by <a href="https:/
 
 Before joining Georgia Tech, I received my B.S. degree in Electrical Engineering with the highest honors from Hanyang University, Seoul, Korea.
 
-My two main research projects are the <a href="https://autorally.github.io/">AutoRally</a> and the <a href="https://www.herox.com/alphapilot/teams">AlphaPilot</a>, developing safe learning-based algorithms for path planning, control, and behavior prediction of autonomous vehicles and robots.
+The two of my main research projects are the <a href="https://autorally.github.io/">AutoRally</a> and the <a href="https://www.herox.com/alphapilot/teams">AlphaPilot</a>, developing safe learning-based algorithms for path planning, decision making, control, and behavior prediction of autonomous vehicles and robots.
