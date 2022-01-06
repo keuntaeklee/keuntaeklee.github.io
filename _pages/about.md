@@ -16,8 +16,12 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-Hi, my name is Keuntaek Lee and I am a Ph.D. student advised by <a href="https://sites.gatech.edu/acds/contact/">Prof. Evangelos A. Theodorou </a> at <a href="https://www.ece.gatech.edu/">Georgia Tech</a>. My research interests include machine learning, robotics, control theory, computer vision, and explainable AI.
+Hi, my name is Keuntaek Lee and I am a Ph.D. student advised by <a href="https://sites.gatech.edu/acds/contact/">Prof. Evangelos A. Theodorou </a> at <a href="https://www.ece.gatech.edu/">Georgia Tech</a>. My research interests include machine learning, robotics, control theory, reinforcement learning, computer vision, and explainable AI.
+
+During my Ph.D. study, I was lucky to work on interesting and challenging research projects including
+the <a href="https://autorally.github.io/">AutoRally</a> and the <a href="https://www.herox.com/alphapilot/teams">AlphaPilot</a>, developing safe learning-based algorithms for path planning, decision making, control, and behavior prediction of autonomous vehicles and robots.
+
+I also worked at <a href="https://usa.honda-ri.com/">Honda Research Institute (HRI)-US</a> as a research intern, under supervision of Dr. Sangjae Bae and Dr. David Isele.
 
 Before joining Georgia Tech, I received my B.S. degree in Electrical Engineering with the highest honors from Hanyang University, Seoul, Korea.
 
-The two of my main research projects are the <a href="https://autorally.github.io/">AutoRally</a> and the <a href="https://www.herox.com/alphapilot/teams">AlphaPilot</a>, developing safe learning-based algorithms for path planning, decision making, control, and behavior prediction of autonomous vehicles and robots.
