@@ -21,7 +21,7 @@ Hi, my name is Keuntaek Lee and I am a Ph.D. student advised by <a href="https:/
 During my Ph.D. study, I was lucky to work on interesting and challenging research projects including
 the <a href="https://autorally.github.io/">AutoRally</a> and the <a href="https://www.herox.com/alphapilot/teams">AlphaPilot</a>, developing safe learning-based algorithms for path planning, decision making, control, and behavior prediction of autonomous vehicles and robots.
 
-I also worked at <a href="https://usa.honda-ri.com/">Honda Research Institute (HRI)-US</a> as a research intern, under supervision of Dr. Sangjae Bae and Dr. David Isele.
+I also worked at <a href="https://usa.honda-ri.com/">Honda Research Institute (HRI)-US</a> as a research intern, in the autonomous driving team, under the supervision of Dr. Sangjae Bae and Dr. David Isele.
 
 Before joining Georgia Tech, I received my B.S. degree in Electrical Engineering with the highest honors from Hanyang University, Seoul, Korea.
 
