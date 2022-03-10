@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2021-03-05 15:59:00-0400
+date: 2021-05-10 15:59:00-0400
 inline: true
 ---
 
-Our Risk-sensitive MPC paper got accepted at L4DC 2021!
+I will be working as a research intern at Honda Research Institute (HRI)-US.
