@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-01-05 15:59:00-0400
+date: 2022-03-01 15:59:00-0400
 inline: true
 ---
 
-Our Inverse RL for MPC paper is accepted at RA-L 2022!
+Our Distributional RL paper is accepted at L4DC 2022!
