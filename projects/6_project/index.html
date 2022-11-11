@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Keuntaek  Lee | blank</title>
+<title>Keuntaek  Lee | Controlling the Vision</title>
 <meta name="description" content="Keuntaek Lee's personal website
 ">
 
@@ -31,7 +31,7 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/6_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -103,7 +103,7 @@
           
           <!-- Blog -->
           <!--
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -112,8 +112,6 @@
           
           -->
           <!-- Other pages -->
-          
-          
           
           
           
@@ -167,56 +165,50 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>al-folio</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Controlling the Vision</h1>
+    <p class="post-description">PixelMPC with a Learned Optical Flow Dynamics</p>
+  </header>
+
+  <article>
+    <h2 id="problem-of-the-high-speed-racing">Problem of the high-speed racing</h2>
+
+<p>In drone racing with a drone equipped with a camera, it is important to control the drone to see and collect more useful information, for example, by pitching up or rolling/yawing. 
+However, this conflicts with the high-speed flying task for a drone because a quadrotor needs to pitch down to fly at a high speed and this results in losing more visual information.</p>
+
+<h2 id="controlling-the-vision">Controlling the Vision</h2>
+
+<p>We introduce deep optical flow (DOF) dynamics, which is a combination of optical flow and robot dynamics. With the DOF dynamics, we can predict the optical flow of the next image captured by the camera mounted on the drone. This prediction is coming from the control action the drone takes.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/dof.png" alt="" title="Pixel Trajectory" />
+    </div>
+</div>
+<div class="caption">
+    *Left*: Legend of optical flow. *Middle*: The ground truth of optical flow, calculated from collected data. *Right*: The predicted optical flow from the learned model.
+</div>
+
+<p>Using the DOF dynamics, PixelMPC explicitly incorporates the predicted movement of relevant pixels into the planned trajectory of a robot.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/pixeltraj.png" alt="" title="Pixel Trajectory" />
+    </div>
+</div>
+<div class="caption">
+    The future movement of the target pixel (the center of a racing gate) predicted by propagating the learned pixel dynamics with MPC.
+</div>
+
+<p>With the proposed MPC approach, the drone can achieve both a visual tracking task and the high speed racing task together.</p>
+
+<h2 id="publications">Publications:</h2>
+<ol>
+  <li><strong>K. Lee</strong>, J. Gibson, and E. A. Theodorou. “Aggressive Perception-Aware Navigation using Deep Optical Flow Dynamics and PixelMPC”. IEEE Robotics and Automation Letters (RA-L), 2020. <a href="https://ieeexplore.ieee.org/document/8957291">[PDF]</a> <a href="https://drive.google.com/file/d/16E0-Ys0HDa6L_-fxsym4X6GkI89Fh6fM/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=NzL2YRcOh_I"> [Video]</a></li>
+</ol>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 

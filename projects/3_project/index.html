@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Keuntaek  Lee | blank</title>
+<title>Keuntaek  Lee | When does ML-based driving fail?</title>
 <meta name="description" content="Keuntaek Lee's personal website
 ">
 
@@ -31,7 +31,7 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/3_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -103,7 +103,7 @@
           
           <!-- Blog -->
           <!--
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -112,8 +112,6 @@
           
           -->
           <!-- Other pages -->
-          
-          
           
           
           
@@ -167,56 +165,57 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>al-folio</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">When does ML-based driving fail?</h1>
+    <p class="post-description">Failure detection with Bayesian Neural Networks and MPC</p>
+  </header>
+
+  <article>
+    <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/foolstop.png" alt="" title="foolstop" />
+    </div>
+</div>
+<div class="caption">
+    An example of a fooled ML-based model. Source: Eykholt, K. et al. CVPR 2018.
+</div>
+
+<p>Data-driven approaches in safety-critical systems are easy to fail. It is necessary to detect when they will fail, before it happens.</p>
+
+<p>We propose the use of Bayesian networks, which provide both a mean value and an uncertainty estimate (variance) as output, to enhance the safety of end-to-end learned deep control policies trained for autonomous driving.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/lee2019earlyfig1b.png" alt="" title="lee2019earlyfig1b" />
+    </div>
+</div>
+<div class="caption">
+    Increased output variance from the Bayesian neural network due to a novel test-time input.
+</div>
+
+<p>Especially the failure of vision-based deep models (e.g. camera-based end-to-end controllers) can be detected much earlier if we combine the model predictive control (MPC) with them.</p>
+
+<p>MPC can guide the vision system <em>where to focus</em> and embed an attention mechanism into the vision pipeline. We train Bayesian convolutional neural networks to predict regions of interest in the input visual information and perform early failure detection of end-to-end trained controllers.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/lee2019papcfig2c.png" alt="" title="lee2019papcfig2c" />
+    </div>
+</div>
+<div class="caption">
+    MPC embeds attention mechanisms on the input vision information for the Bayesian CNN.
+</div>
+
+<h2 id="publications">Publications:</h2>
+<ol>
+  <li><strong>K. Lee</strong>, G. N. An, V. Zakharov, and E. A. Theodorou. “Perceptual Attention-based Predictive Control.” 3rd Conference on Robot Learning (CoRL), 2019. (Acceptance rate: 27%) <a href="http://proceedings.mlr.press/v100/lee20b.html">[PDF]</a> <a href="https://drive.google.com/file/d/1zhzlFdBdhkpy0UEXwQshJoYTdQ7KgGig/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=-Zmi0HCvM9I"> [Video]</a></li>
+  <li><strong>K. Lee</strong>, Z. Wang, B. Vlahov, H. Brar, and E. A. Theodorou. “Ensemble Bayesian Decision Making with Redundant Deep Perceptual Control Policies.” The 18th IEEE International Conference on Machine Learning and Applications (ICMLA), 2019. (Acceptance rate, Long paper : 28%) <a href="https://ieeexplore.ieee.org/abstract/document/8999215">[PDF]</a> <a href="https://drive.google.com/file/d/1VwP9cD5If7W-PKhZ1oTT36X7ZG5yBtjc/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=poRbH__kB2M">[Video]</a></li>
+  <li><strong>K. Lee</strong>, K. Saigol, and E. A. Theodorou. “Early Failure Detection of Deep End-to-End Control Policy by Reinforcement Learning.” 2019 IEEE International Conference on Robotics and Automation (ICRA). <a href="https://ieeexplore.ieee.org/abstract/document/8794189">[PDF]</a> <a href="https://drive.google.com/file/d/1S2cR0UrAyt-IIDHkFL7O5g-zz4_RfxSC/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=UQwhVuMJK7E">[Video]</a></li>
+  <li><strong>K. Lee</strong>, K. Saigol, and E. A. Theodorou. “Safe Imitation Learning for End-to-End Control.”  Robotics: Science and Systems(RSS) Workshop on Adversarial Robotics, 2018. <a href="https://www.semanticscholar.org/paper/Safe-Imitation-Learning-for-End-to-End-Control-Lee-Saigol/59bd8cf6cb618d056d7bdb477909f08f4d77e641?p2df">[PDF]</a> <a href="https://drive.google.com/file/d/1Sr6wzUg8-hPbjKOk9K0tYASnl1mKOEYA/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=UQwhVuMJK7E">[Video]</a></li>
+</ol>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 

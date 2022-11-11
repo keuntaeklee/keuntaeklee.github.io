@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Keuntaek  Lee | blank</title>
+<title>Keuntaek  Lee | Deep Inverse Reinforcement Learning</title>
 <meta name="description" content="Keuntaek Lee's personal website
 ">
 
@@ -31,7 +31,7 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/4_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -103,7 +103,7 @@
           
           <!-- Blog -->
           <!--
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -112,8 +112,6 @@
           
           -->
           <!-- Other pages -->
-          
-          
           
           
           
@@ -167,56 +165,49 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>al-folio</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Deep Inverse Reinforcement Learning</h1>
+    <p class="post-description">Learning a reward/cost function with Deep Neural Networks</p>
+  </header>
 
+  <article>
+    <div class="row justify-content-sm-center">
+    <div class="col-sm-22 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/carla.png" alt="" title="CARLA simulator" />
+    </div>
+</div>
+<div class="caption">
+    Lane changing in a dense traffic scenario in CARLA simulator.
+</div>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-22 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/rviz_occupancy.png" alt="" title="Learned high reward region in Red" />
+    </div>
+</div>
+<div class="caption">
+    The learned high reward region from human driving data (Red: high reward).
+</div>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<p>It can be difficult to autonomously produce driver behavior so that it appears natural to other traffic participants. Through Inverse Reinforcement Learning (IRL), we can automate this process by learning the underlying reward function from human demonstrations.</p>
 
+<p>We propose a new IRL algorithm that learns costmaps that can be used by Model Predictive Controllers (MPCs) to perform a task without any hand-designing or hand-tuning of the cost function.</p>
 
+<h2 id="publications">Publications:</h2>
+<ol>
+  <li>
+    <p><strong>K. Lee</strong>, B. Vlahov, J. Gibson, J. M. Rehg, and E. A. Theodorou. “Approximate Inverse Reinforcement Learning from Vision-based Imitation Learning.” 2021 IEEE International Conference on Robotics and Automation (ICRA). <a href="https://arxiv.org/abs/2004.08051">[PDF]</a> <a href="https://drive.google.com/file/d/14XbceV8czvdwh0T-K9U8sHTaBxtjYOh1/view">[BibTeX]</a> <a href="https://www.youtube.com/watch?v=WyJfT5lc0aQ"> [Video]</a></p>
+  </li>
+  <li>
+    <p><strong>K. Lee</strong>, D. Isele, E. A. Theodorou, S. Bae. “Spatiotemporal Costmap Inference for MPC via Deep Inverse Reinforcement Learning.” IEEE Robotics and Automation Letters (RA-L), 2022. <a href="https://arxiv.org/abs/2201.06539">[PDF]</a> <a href="https://drive.google.com/file/d/1L0gGurBnsY4zoTuNWOgovwx2KJjfFBVu/view">[BibTeX]</a> <a href="https://youtu.be/Ft4u5AclSLA"> [Video]</a></p>
+  </li>
+  <li>
+    <p><strong>K. Lee</strong>, D. Isele, E. A. Theodorou, S. Bae. “Risk-sensitive MPCs with Deep Distributional Inverse RL for Autonomous Driving.” IEEE/RSJ International Conference on Intelligent Robots and Systems
+(IROS), 2022.</p>
+  </li>
+</ol>
+
+  </article>
 
 </div>
 
