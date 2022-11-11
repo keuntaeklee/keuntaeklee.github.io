@@ -36,5 +36,5 @@ We propose a new IRL algorithm that learns costmaps that can be used by Model Pr
 
 2. **K. Lee**, D. Isele, E. A. Theodorou, S. Bae. "Spatiotemporal Costmap Inference for MPC via Deep Inverse Reinforcement Learning." IEEE Robotics and Automation Letters (RA-L), 2022. <a href="https://arxiv.org/abs/2201.06539">[PDF]</a> <a href="https://drive.google.com/file/d/1L0gGurBnsY4zoTuNWOgovwx2KJjfFBVu/view">[BibTeX]</a> <a href="https://youtu.be/Ft4u5AclSLA"> [Video]</a>
 
-3. **K. Lee**, D. Isele, E. A. Theodorou, S. Bae. "Risk-sensitive MPCs with Deep Distributional Inverse RL for Autonomous Driving." preprint, under review.
-
+3. **K. Lee**, D. Isele, E. A. Theodorou, S. Bae. "Risk-sensitive MPCs with Deep Distributional Inverse RL for Autonomous Driving." IEEE/RSJ International Conference on Intelligent Robots and Systems
+(IROS), 2022.
